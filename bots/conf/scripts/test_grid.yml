@@ -1,0 +1,95 @@
+activation_bounds:
+  default: null
+  required: false
+  type: typing.Optional[decimal.Decimal]
+candles_config:
+  default: []
+  required: false
+  type: typing.List[hummingbot.data_feed.candles_feed.data_types.CandlesConfig]
+connector_name:
+  default: kraken
+  required: false
+  type: <class 'str'>
+controller_name:
+  default: grid_strike
+  required: false
+  type: <class 'str'>
+controller_type:
+  default: generic
+  required: false
+  type: <class 'str'>
+end_price:
+  default: '1.0006'
+  required: false
+  type: <class 'decimal.Decimal'>
+id:
+  default: null
+  required: false
+  type: <class 'str'>
+initial_positions:
+  default: []
+  required: false
+  type: typing.List[hummingbot.strategy_v2.models.position_config.InitialPositionConfig]
+keep_position:
+  default: false
+  required: false
+  type: <class 'bool'>
+leverage:
+  default: 20
+  required: false
+  type: <class 'int'>
+limit_price:
+  default: '0.9990'
+  required: false
+  type: <class 'decimal.Decimal'>
+manual_kill_switch:
+  default: false
+  required: false
+  type: <class 'bool'>
+max_open_orders:
+  default: 4
+  required: false
+  type: <class 'int'>
+max_orders_per_batch:
+  default: 1
+  required: false
+  type: typing.Optional[int]
+min_order_amount_quote:
+  default: '5'
+  required: false
+  type: typing.Optional[decimal.Decimal]
+min_spread_between_orders:
+  default: '0.0001'
+  required: false
+  type: typing.Optional[decimal.Decimal]
+order_frequency:
+  default: 10
+  required: false
+  type: <class 'int'>
+position_mode:
+  default: PositionMode.HEDGE
+  required: false
+  type: <enum 'PositionMode'>
+side:
+  default: TradeType.BUY
+  required: false
+  type: <enum 'TradeType'>
+start_price:
+  default: '0.9992'
+  required: false
+  type: <class 'decimal.Decimal'>
+total_amount_quote:
+  default: '100'
+  required: false
+  type: <class 'decimal.Decimal'>
+trading_pair:
+  default: USDG-USD
+  required: false
+  type: <class 'str'>
+triple_barrier_config:
+  default: 'stop_loss=None take_profit=Decimal(''0.001'') time_limit=None trailing_stop=None
+    open_order_type=<OrderType.LIMIT_MAKER: 3> take_profit_order_type=<OrderType.LIMIT_MAKER:
+    3> stop_loss_order_type=<OrderType.MARKET: 1> time_limit_order_type=<OrderType.MARKET:
+    1>'
+  required: false
+  type: <class 'hummingbot.strategy_v2.executors.position_executor.data_types.TripleBarrierConfig'>

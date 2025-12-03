@@ -1,0 +1,56 @@
+# =================================================================
+# Backend API Environment Configuration
+# Generated on: Wed Nov 19 13:37:06 EST 2025
+# =================================================================
+
+# =================================================================
+# 🔐 Security Configuration
+# =================================================================
+USERNAME=admin
+PASSWORD=admin
+DEBUG_MODE=false
+CONFIG_PASSWORD=admin
+
+# =================================================================
+# 🔗 MQTT Broker Configuration (BROKER_*)
+# =================================================================
+BROKER_HOST=localhost
+BROKER_PORT=1883
+BROKER_USERNAME=admin
+BROKER_PASSWORD=password
+
+# =================================================================
+# 💾 Database Configuration (DATABASE_*)
+# =================================================================
+DATABASE_URL=postgresql+asyncpg://hbot:hummingbot-api@localhost:5432/hummingbot_api
+
+# =================================================================
+# 📊 Market Data Feed Manager Configuration (MARKET_DATA_*)
+# =================================================================
+MARKET_DATA_CLEANUP_INTERVAL=300
+MARKET_DATA_FEED_TIMEOUT=600
+
+# =================================================================
+# ☁️ AWS Configuration (AWS_*) - Optional
+# =================================================================
+AWS_API_KEY=
+AWS_SECRET_KEY=
+AWS_S3_DEFAULT_BUCKET_NAME=
+
+# =================================================================
+# ⚙️ Application Settings
+# =================================================================
+LOGFIRE_ENVIRONMENT=dev
+BANNED_TOKENS=["NAV","ARS","ETHW","ETHF","NEWT"]
+
+# =================================================================
+# 🌐 Gateway Configuration (GATEWAY_*) - Optional
+# =================================================================
+GATEWAY_PASSPHRASE=admin
+GATEWAY_URL=http://localhost:15888
+
+# =================================================================
+# 📁 Legacy Settings (maintained for backward compatibility)
+# =================================================================
+BOTS_PATH=/home/sourge/hummingbot-api
+

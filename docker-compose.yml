@@ -17,7 +17,7 @@ services:
   #   networks:
   #       - emqx-bridge
   hummingbot-api:
-    container_name: hummingbot-api
+    container_name: my-hummingbot-api
     image: hummingbot/hummingbot-api:latest
     ports:
       - "8000:8000"
@@ -41,7 +41,7 @@ services:
     depends_on:
       - postgres
   emqx:
-    container_name: hummingbot-broker
+    container_name: my-hummingbot-broker
     image: emqx:5
     restart: unless-stopped
     environment:
@@ -72,7 +72,7 @@ services:
       timeout: 25s
       retries: 5
   postgres:
-    container_name: hummingbot-postgres
+    container_name: my-hummingbot-postgres
     image: postgres:16
     restart: unless-stopped
     environment:
